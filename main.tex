@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Chris West} \\ %\vspace{1pt}
+    %123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 904-469-4104 ~ \href{mailto:christinewwwest@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{christinewwwest@gmail.com}} ~ 
+    \href{https://https://www.linkedin.com/in/chris-west-code-wrangler///}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://https://github.com/Westc13/}{\raisebox{-0.2\height}\faGithub\ \underline{github}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        %\begin{multicols}{4}
+            %\begin{itemize}[itemsep=-5pt, parsep=3pt]
+                %\item\small Data Structures
+                %\item Software Methodology
+                %\item Algorithms Analysis
+                %\item Database Management
+                %\item Artificial Intelligence
+                %\item Internet Technology
+                %\item Systems Programming
+                %\item Computer Architecture
+            %\end{itemize}
+        %\end{multicols}
+        %\vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Working knowledge}{: Python, JS/TS, React, HTML/CSS, Tailwind, SQL, Git/GitHub, Linux, Firebase, Contentful CMS, Jira/Kanban} \\
+% \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+     \textbf{Exposure}{: Ruby, C\verb|#|, C, LaTex} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {McMaster University}{Mar -- Apr 2023}
+      {Web Developer, Contract}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained a research facility website using React.js, SCSS, and Contentful CMS, utilizing Git and GitHub for version control and Jira with a Kanban board for collaboration.}
+        \resumeItem{Ensured website accessibility compliance with WCAG 2.1 guidelines, optimized website performance, and improved website visibility through SEO techniques.}
+        \resumeItem{Successfully launched the website on time and within budget, after conducting thorough testing for accessibility, SEO, and performance, resulting in positive feedback from users and stakeholders.}
+        %\resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CoLab}{Oct 2022 -- Jan 2023}
+      {Software Developer, Intern}{GTA, ON}
+      \resumeItemListStart
+        \resumeItem{Collaborated on an international cross-functional team to launch a live product using Agile methodologies, Trello boards, and weekly standups, working closely with a Product Manager, Product Designer, and Developers.}
+        \resumeItem{Developed product features using React and design tools such as Figma, based on requirements, design specifications, and user feedback.}
+        \resumeItem{Incorporated user feedback to improve the product's features and functionality and participated in the final live demo of the project to stakeholders.}
+        %\resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{RxStar} $|$ \emph{Python, React,PostGreSQL, AWS}}{May - Present 2023}
+          \resumeItemListStart
+            \resumeItem{Developing a medication and food/drink interaction web app using React, Python, PostgreSQL, and AWS.}
+            \resumeItem{Implemented frontend UI components and backend APIs to facilitate medication and food/drink scheduling while avoiding interactions.}
+            \resumeItem{Integrated a drug interaction database/API, ensuring data security and collaborating with medical professionals to provide accurate information.}
+            %\resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{NBRLYU} $|$ \emph{React, Firebase, HTML/CSS}}{Oct 2022 - Jan 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a web application facilitating acts of kindness among neighbors, reducing loneliness and fostering community engagement.}
+            \resumeItem{Utilized technologies such as React, Firebase, and HTML/CSS to create a user-friendly interface for posting requests and offers of assistance.}
+            \resumeItem{Implemented features like notifications, user profiles, and activity tracking to enhance user experience and promote a sense of belonging within neighborhoods.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{4-U-2-Write} $|$ \emph{React, Firebase, HTML/CSS}}{Aug - Sept 2022}
+          \resumeItemListStart
+            \resumeItem{Created a user-friendly SPA that offered a customizable timer, writing prompts, and a clean interface to enhance focus and productivity.}
+            \resumeItem{Designed a timer feature with a 15-second inactivity warning, promoting consistent writing engagement. Integrated a communal daily writing prompt for users to contribute and engage with the writing community.}
+            \resumeItem{Implemented robust error handling and integrated APIs for writing prompts. Added light and dark mode options for enhanced user customization.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Juno College}{Jun -- Sep 2022}
+      {Web Development Immersive Diploma}{Toronto, ON}
+  %\resumeSubHeadingListEnd
+%\resumeSubHeadingListStart
+    \resumeSubheading
+      {Toronto Metropolitan University}{Sep 2002 -- May 2005}
+      {Bachelor of Science in Food and Nutrition}{Toronto, ON}
+  \resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{Awards / Achievements}
+
+\begin{itemize}
+\item \textbf{Publication:} The Canadian Journal of Gastroenterology (Feb 2009)
+\item \textbf{Bronze Medal:} Council for Continuing Pharmaceutical Education Accreditation (Sep 2011)
+\end{itemize}
+
+\end{document}
