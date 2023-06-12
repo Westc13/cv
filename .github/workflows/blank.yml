@@ -1,0 +1,33 @@
+name: PDF Generation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          latex-version: 'TeXLive'
+          tex-packages: 'your-latex-packages' # Add any required LaTeX packages here
+
+      - name: Build PDF
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume-pdf
+          path: main.pdf
